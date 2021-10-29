@@ -1,17 +1,30 @@
+import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Footer from './Componants/Footer/Footer';
 import Header from './Componants/Header/Header';
 import Home from './Componants/Home/Home';
+import Offers from './Componants/Offers/Offers';
+import PrivateRoute from './Componants/PrivateRoute/PrivateRoute';
+import SignIn from './Componants/SignIn/SignIn';
+import OfferDetails from './Componants/OfferDetails/OfferDetails';
 
 function App() {
   return (
     <BrowserRouter>
       <Header></Header>
       <Switch>
-        <Route path="/home">
+        <Route exact path="/">
           <Home></Home>
         </Route>
+        <Route path='/details/:id'>
+          <OfferDetails></OfferDetails>
+        </Route>
+        <Route path="/signin">
+          <SignIn></SignIn>
+        </Route>
       </Switch>
+      <Footer></Footer>
     </BrowserRouter>
   );
 }

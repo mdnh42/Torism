@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Tour Offer Swizerland",
+        "price": 5000,
+        "offerDetails": "Travelling with us in Swizerland Most Popular Tourist Place only 10 Days and 9 Night with Free Ticket, Foods, Photograpy, Riding, Swiiming, Walking, Hiking, Entertaing with 5 Star Hotel and Business Biman.",
+        "img": "https://i.ibb.co/t8ZmQxL/john-lee-o-Mne-OBYh-Jx-Y-unsplash.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Special Tour India (Taj Mahal)",
+        "price": 4300,
+        "offerDetails": "Tour with us in India Most Popular Symbol of Love only 5 Days and 4 Night with Free Ticket, Foods, Photograpy, Riding, Swiiming, Walking, Hiking, Entertaing with 5 Star Hotel and Business Biman. Note: This offer will closed in November, 2021.)",
+        "img": "https://i.ibb.co/t8ZmQxL/john-lee-o-Mne-OBYh-Jx-Y-unsplash.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Awesome Traveling with us in Cox's Bazar.",
+        "price": 3300,
+        "offerDetails": "Awesome Travelling with us in Most popular Place in Bangladesh. We will serve you an awesome chilli time in Cox's Bazar with 7 Star Hotel, Brackfast, Lanch, dinner with Driy Fish (Chutki Mas).",
+        "img": "https://i.ibb.co/t8ZmQxL/john-lee-o-Mne-OBYh-Jx-Y-unsplash.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Tour with Kengrao in Australia",
+        "price": 3500,
+        "offerDetails": "Tour Lovers offer you in November' 2021 Kengaro's Country is known Australia with 7 Days and 6 Night, Food, Photograpy, Riding, Hiking etc.",
+        "img": "https://i.ibb.co/t8ZmQxL/john-lee-o-Mne-OBYh-Jx-Y-unsplash.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Summer Offer in Canada",
+        "price": 6500,
+        "offerDetails": "One of Most visited place in world Canada. with 7 Days and 6 Night, Food, Photograpy, Riding, Hiking etc.",
+        "img": "https://i.ibb.co/t8ZmQxL/john-lee-o-Mne-OBYh-Jx-Y-unsplash.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Hiking with Himaloy Special Offer in December",
+        "price": 2400,
+        "offerDetails": "Himaloy Tour with 7 Days and 6 Night, Food, Photograpy, Riding, Hiking etc.",
+        "img": "https://i.ibb.co/t8ZmQxL/john-lee-o-Mne-OBYh-Jx-Y-unsplash.jpg"
+    }
+]

@@ -6,35 +6,37 @@ const Banner = () => {
         <Carousel variant="dark">
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=First slide&bg=f5f5f5"
+                    className="d-block w-100 text-light"
+                    src="https://i.ibb.co/yXh7Dhf/swi.jpg"
                     alt="First slide"
+                    
                 />
-                <Carousel.Caption>
-                    <h5>First slide label</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <Carousel.Caption className="text-light">
+                    <h3>Summer Offer in Swizerland</h3>
+                    <p className="text-h5">One of Most visited place in world Canada. with 7 Days and 6 Night, Food, Photograpy, Riding, Hiking etc.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=Second slide&bg=eee"
+                    className="d-block w-100 text-light"
+                    src="https://i.ibb.co/1LDCMSs/jovyn-chamb-i-WMfi-Inivp4-unsplash.jpg"
                     alt="Second slide"
+                    
                 />
-                <Carousel.Caption>
-                    <h5>Second slide label</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <Carousel.Caption className="text-light">
+                    <h3>Special Tour India (Taj Mahal)</h3>
+                    <p>Tour with us in India Most Popular Symbol of Love only 5 Days and 4 Night with Free Ticket, Foods, Photograpy, Riding, Swiiming.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=e5e5e5"
+                    className="d-block w-100 text-light"
+                    src="https://i.ibb.co/0K1nyW2/stefan-stefancik-0w-Mmx-NB6-Xzc-unsplash.jpg"
                     alt="Third slide"
                 />
-                <Carousel.Caption>
-                    <h5>Third slide label</h5>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <Carousel.Caption className="text-light">
+                    <h3>Tour In Austrealia</h3>
+                    <p>7 Days 6 Night with Breakfast, Lanch & Dinner.</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
@@ -42,3 +44,16 @@ const Banner = () => {
 };
 
 export default Banner;
+
+
+
+// 
+// 
+// 
+// 
+// 
+// https://i.ibb.co/t8ZmQxL/john-lee-o-Mne-OBYh-Jx-Y-unsplash.jpg
+// https://i.ibb.co/Wy5DbCR/jovyn-chamb-i-WMfi-Inivp4-unsplash.jpg
+// https://i.ibb.co/V3rhFXw/lucas-davies-i-P8-El-Ehq-He-Y-unsplash.jpg
+// https://i.ibb.co/ZYW5Bqd/mesut-kaya-e-Ocyhe5-9s-Q-unsplash.jpg
+// https://i.ibb.co/KF55sSY/sumit-sourav-e-SRtx-Pd9q1c-unsplash.jpg
