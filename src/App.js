@@ -8,6 +8,7 @@ import Offers from './Componants/Offers/Offers';
 import PrivateRoute from './Componants/PrivateRoute/PrivateRoute';
 import SignIn from './Componants/SignIn/SignIn';
 import OfferDetails from './Componants/OfferDetails/OfferDetails';
+import MyOrders from './Componants/MyOrders/MyOrders';
 
 function App() {
   return (
@@ -17,9 +18,18 @@ function App() {
         <Route exact path="/">
           <Home></Home>
         </Route>
-        <Route path='/details/:id'>
+
+
+        {/* <Route path='/details/:id'>
           <OfferDetails></OfferDetails>
-        </Route>
+        </Route> */}
+        <PrivateRoute path='/details/:id'>
+          <OfferDetails></OfferDetails>
+        </PrivateRoute>
+        <PrivateRoute path='/my-orders'>
+          <MyOrders></MyOrders>
+        </PrivateRoute>
+        
         <Route path="/signin">
           <SignIn></SignIn>
         </Route>

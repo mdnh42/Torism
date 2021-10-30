@@ -4,12 +4,9 @@ import { useHistory, useLocation } from 'react-router';
 import useFirebase from '../../Hooks/useFirebase';
 
 const SignIn = () => {
-    const { user, setUser, error, setError, signInWithGoogle } = useFirebase()
+    const { setUser, setIsLoading, signInWithGoogle } = useFirebase()
     const history = useHistory()
     const location = useLocation()
-    console.log(user)
-    console.log('History rd', history)
-    console.log('Location rd', location)
 
     // const redirectURI = '/'
     const redirectURI = location.state?.from.pathname || '/'
@@ -19,16 +16,14 @@ const SignIn = () => {
         signInWithGoogle()
             .then(result => {
                 setUser(result.user)
-                console.log(user)
-                console.log("rd uri", redirectURI)
                 history.push(redirectURI)
             })
             .catch(e => {
                 console.log(e)
-                setError(e.message)
             })
-    }
+            .finally(() => setIsLoading(false))
 
+    }
 
 
     return (
