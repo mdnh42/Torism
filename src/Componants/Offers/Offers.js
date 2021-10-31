@@ -19,7 +19,7 @@ const Offers = () => {
             <h2 className="text-warning text-center mb-3">Our Offers</h2>
             <Row xs={3} md={2} lg={3} className="g-4">
                 {
-                    offers.map(offer =>
+                    offers.map(offer => 
                         <Offer {...offer} />
                     )
                 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Offer from '../Offer/Offer';
 
 const AllOrders = () => {
     const [allOrders, setAllOrder] = useState([]);
@@ -10,11 +11,28 @@ const AllOrders = () => {
 
             )
     }, [])
+    const handleDelete = id =>{
+        console.log("click", id)
+        const url = `http://localhost:5000/all-orders/${id}`;
+        fetch(url, {
+            method: 'DELETE'
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            if(data.deletedCount){
+                alert('deleted');
+                const remaining = allOrders.filter(order => order._id !== id);
+                setAllOrder(remaining);
+            }
+            
+        })
+    }
     return (
         <div>
             <h2 className="text-center text-warning mt-5">Manage All Order </h2>
             {
-                allOrders.map(allOrder => <div className="container">
+                allOrders.map(order => <div className="container">
                     <table className="table table-bordered">
                         <thead className="thead-dark">
                         <tr scope="row">
@@ -26,10 +44,10 @@ const AllOrders = () => {
                         </thead>
                        <tbody>
                         <tr scope="row">
-                            <th>{allOrder.email}</th>
-                            <th>{allOrder.name}</th>
-                            <th> {allOrder.price}</th>
-                            <th> <button className="btn btn-danger">Delate</button> </th>
+                            <th>{order.email}</th>
+                            <th>{order.name}</th>
+                            <th> {order.price}</th>
+                            <th> <button onClick={() =>handleDelete(order._id)} className="btn btn-danger">Delate</button> </th>
                         </tr>
                         </tbody>
                     </table>
