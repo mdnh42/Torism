@@ -11,6 +11,7 @@ import OfferDetails from './Componants/OfferDetails/OfferDetails';
 import MyOrders from './Componants/MyOrders/MyOrders';
 import AllOrders from './Componants/AllOrders/AllOrders';
 import NotFound from './Componants/NotFound/NotFound';
+import AddNewOffer from './Componants/AddNewOffer/AddNewOffer';
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
           <AllOrders></AllOrders>
         </PrivateRoute>
         <PrivateRoute path='/AddNewOffer'>
-          <AllOrders></AllOrders>
+          <AddNewOffer></AddNewOffer>
         </PrivateRoute>
         <Route path="/signin">
           <SignIn></SignIn>

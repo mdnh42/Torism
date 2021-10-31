@@ -14,6 +14,7 @@ const OfferDetails = () => {
     }, [])
 
     const handlePlaceOrder = () => {
+        console.log('place o b')
         const email = user.email;
         const offer_id = id;
         const price = offer.price;

@@ -12,6 +12,25 @@ const MyOrders = () => {
 
     }, [])
 
+    const handleConfirmBtn = id => {
+        axios.put('http://localhost:5000/change-status', { id: id })
+            .then(res => {
+                if (res.data.modifiedCount === 1) {
+                    const remainning = orders.filter(order => order._id !== id)
+                    const { status, ...rest } = orders.find(order => order._id === id)
+                    const updated = { ...rest, status: 'confirmed' }
+
+                    setOrders([updated, ...remainning])
+                }
+                else {
+                    alert('Something went wrong, please try again later')
+                }
+            })
+            .catch(error => console.log('got an error: ', error))
+
+    }   
+
+
     return (
         <div>
             <h2 className="text-center text-warning">My Order </h2>
@@ -23,7 +42,8 @@ const MyOrders = () => {
                             <p>Offer: {order.name}</p>
                             <img src={order.img} alt="" />
                             <p>Offer Price: {order.price}</p>
-                            <button className="btn-warning text-white">Status: {order.status}</button>
+                            <p>Status: {order.status}</p>
+                            <button onClick={() => handleConfirmBtn(order._id)} className="btn-warning text-white">confirm</button>
                        </div>
 
 

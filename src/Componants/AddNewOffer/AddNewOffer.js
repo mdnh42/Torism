@@ -1,3 +1,4 @@
+import './AddNewOffer.css';
 import React, { useRef } from 'react';
 import axios from 'axios';
 
@@ -47,9 +48,6 @@ const AddNewOffer = () => {
                 <textarea required rows="5" ref={detailsRef}></textarea>
                 <p><b>Facilities :</b></p>
                 <textarea required rows="3" ref={facRef}></textarea>
-                <p><strong>Note: </strong> Add multiple facilities with comma(,) separeted. <br />
-                    ( <i>e.g: 3 days, luxarius room </i>) etc
-                </p>
                 <p><b>Price :</b></p>
                 <input required type="text" ref={priceRef} />
                 <p><b>Image url :</b></p>
