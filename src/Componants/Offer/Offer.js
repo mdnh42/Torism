@@ -14,7 +14,7 @@ const Offer = ({ name, offerDetails, img, price, _id }) => {
                             <Card.Text>
                                 <span className="fw-bold">Offer Details:</span> <br/>{offerDetails}
                             </Card.Text>
-                            <Link to={`/details/${_id}`}> <button className="btn-warning text-white fw-bold">Booking ${price}</button></Link>
+                            <Link to={`/details/${_id}`}> <button className="btn-warning text-white fw-bold">Book Now ${price}</button></Link>
                         </Card.Body>
                     </Card>
                 </Col>

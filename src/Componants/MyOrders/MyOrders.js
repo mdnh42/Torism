@@ -18,14 +18,13 @@ const MyOrders = () => {
             {
                 orders.map(order => <div className="container">
                     
-                    <ul>
-                        <li>
-                            <p>Email: {order.email}</p>
-                            <p>Name: {order.name}</p>
+                    <div className="row bg-light m-3">
+                            <p>Client Name: {order.email}</p> 
+                            <p>Offer: {order.name}</p>
+                            <img src={order.img} alt="" />
                             <p>Offer Price: {order.price}</p>
-                            <p>Status: {order.status}</p>
-                        </li>
-                    </ul>
+                            <button className="btn-warning text-white">Status: {order.status}</button>
+                       </div>
 
 
                 </div>)

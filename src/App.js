@@ -9,6 +9,8 @@ import PrivateRoute from './Componants/PrivateRoute/PrivateRoute';
 import SignIn from './Componants/SignIn/SignIn';
 import OfferDetails from './Componants/OfferDetails/OfferDetails';
 import MyOrders from './Componants/MyOrders/MyOrders';
+import AllOrders from './Componants/AllOrders/AllOrders';
+import NotFound from './Componants/NotFound/NotFound';
 
 function App() {
   return (
@@ -18,20 +20,23 @@ function App() {
         <Route exact path="/">
           <Home></Home>
         </Route>
-
-
-        {/* <Route path='/details/:id'>
-          <OfferDetails></OfferDetails>
-        </Route> */}
         <PrivateRoute path='/details/:id'>
           <OfferDetails></OfferDetails>
         </PrivateRoute>
         <PrivateRoute path='/my-orders'>
           <MyOrders></MyOrders>
         </PrivateRoute>
-        
+        <PrivateRoute path='/all-orders'>
+          <AllOrders></AllOrders>
+        </PrivateRoute>
+        <PrivateRoute path='/adNewOffer'>
+          <AllOrders></AllOrders>
+        </PrivateRoute>
         <Route path="/signin">
           <SignIn></SignIn>
+        </Route>
+        <Route path="*">
+          <NotFound></NotFound>
         </Route>
       </Switch>
       <Footer></Footer>

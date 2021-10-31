@@ -34,7 +34,7 @@ const SignIn = () => {
 
                 </div>
                 <div className="text-center py-3">
-                    <button onClick={handleGoogleSignIn} className="btn btn-warning text-white py-5"> Sign in with Google </button>
+                    <button onClick={handleGoogleSignIn} className="btn btn-warning text-white px-3"> Sign in with Google </button>
                     <br />
                     <br />
                     <p>Please, Sign in with Google Account. </p>
