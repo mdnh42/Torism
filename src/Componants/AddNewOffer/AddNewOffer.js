@@ -19,7 +19,7 @@ const AddNewOffer = () => {
 
         const newService = { name, des, serDe, price, img }
 
-        axios.post('https://frightening-hollow-59703.herokuapp.com/add-service', newService)
+        axios.post('http://localhost:5000//addNewOffer', newService)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Service added')
