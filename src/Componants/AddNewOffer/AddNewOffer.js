@@ -20,7 +20,7 @@ const AddNewOffer = () => {
 
         const newService = { name, des, serDe, price, img }
 
-        axios.post('http://localhost:5000//addNewOffer', newService)
+        axios.post('https://ghoulish-mansion-34533.herokuapp.com//addNewOffer', newService)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Service added')

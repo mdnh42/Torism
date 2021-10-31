@@ -5,7 +5,7 @@ import Offer from '../Offer/Offer';
 const AllOrders = () => {
     const [allOrders, setAllOrder] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:5000/all-orders/')
+        axios.get('https://ghoulish-mansion-34533.herokuapp.com/all-orders/')
             .then(offers => setAllOrder(offers.data)
 
 
@@ -13,7 +13,7 @@ const AllOrders = () => {
     }, [])
     const handleDelete = id =>{
         console.log("click", id)
-        const url = `http://localhost:5000/all-orders/${id}`;
+        const url = `https://ghoulish-mansion-34533.herokuapp.com/all-orders/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

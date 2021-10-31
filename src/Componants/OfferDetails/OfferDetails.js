@@ -9,7 +9,7 @@ const OfferDetails = () => {
     const {user} = useFirebase()
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/offers/${id}`)
+        axios.get(`https://ghoulish-mansion-34533.herokuapp.com/offers/${id}`)
             .then(res => setOffer(res.data));
     }, [])
 
@@ -21,7 +21,7 @@ const OfferDetails = () => {
         const name = offer.name;
         const img = offer.img;
         const status = 'panding';
-        axios.post('http://localhost:5000/place-order', {
+        axios.post('https://ghoulish-mansion-34533.herokuapp.com/place-order', {
             email,
             offer_id,
             price,

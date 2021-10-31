@@ -6,14 +6,14 @@ const MyOrders = () => {
     const { } = useFirebase();
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:5000/my-orders/mdnh.42@gmail.com')
+        axios.get('https://ghoulish-mansion-34533.herokuapp.com/my-orders/mdnh.42@gmail.com')
             .then(res => setOrders(res.data))
             .catch(error => console.log(error))
 
     }, [])
 
     const handleConfirmBtn = id => {
-        axios.put('http://localhost:5000/change-status', { id: id })
+        axios.put('https://ghoulish-mansion-34533.herokuapp.com/change-status', { id: id })
             .then(res => {
                 if (res.data.modifiedCount === 1) {
                     const remainning = orders.filter(order => order._id !== id)

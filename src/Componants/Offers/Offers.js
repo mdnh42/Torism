@@ -8,7 +8,7 @@ const Offers = () => {
 
     useEffect(() => {
 
-        axios.get('http://localhost:5000/offers')
+        axios.get('https://ghoulish-mansion-34533.herokuapp.com/offers')
             .then(offers => {
                 setOffers(offers.data);
             })
